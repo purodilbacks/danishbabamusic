@@ -11,7 +11,8 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAIp9mBtwBBZGywWEmV-WC8gcMArjusuAAKMAgACTp1xV6m-mtC1YTfoHgQ")
     await message.reply_text(
-        f"""<b>Hey {message.from_user.first_name}! Hii
+        f"""<b>Hey {format(
+        message.from_user.mention)}! Hii
 I am powerful VC music Bot..🔥
 I can play songs in your group's VC 😉
 
